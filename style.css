@@ -1,0 +1,64 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.calc {
+    background-color: black;
+    padding: 50px 10px 10px 10px;
+    width: 300px;
+    margin: 50px auto 0 auto;
+    border-radius: 15px;
+}
+p {
+    color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: end;
+    padding: 0 20px 10px 0;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.buttons {
+    display: grid;
+    grid-template-areas:
+    "ac plus-minus persent division"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one tho three plus"
+    'zero zero dot equal';
+    grid-gap: 7px;
+    justify-items: center;
+    background-color: #000;
+}
+.btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #29272b;
+    color: white;
+    border-radius: 50%;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.btn:hover {
+    filter: brightness(120%);
+}
+.btn:active {
+    filter: brightness(90%);
+}
+.by-orange {
+    background-color: #ff6900;
+}
+.bg-grey {
+    background-color: #737671;
+}
+.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 50px;
+}
